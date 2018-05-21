@@ -1,1 +1,48 @@
-<h1>Hello World</h1>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <link href="css/animate.css" rel="stylesheet">
+        <link href="css/waypoints.css" rel="stylesheet">
+        <script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
+        <script src="js/waypoints.js" type="text/javascript"></script>
+        <title>Christopher Tong Webpage</title>
+    </head>
+    <body>
+        <section class="landing" id="land">
+            <div class="inner">
+                <div class="content">
+                    <section class="os-animation" data-os-animation="bounceInDown" data-os-animation-delay="0">
+                        <h1>Hey, I'm Chris 👋</h1>
+                    </section>
+                    <section class="os-animation" data-os-animation="bounceIn" data-os-animation-delay="1.0">
+                        <p>I'm a B.A. candidate at New York University studying computer science and math.</p>
+                        <p>Feel free to check out my portfolio or contact me!</p>
+                    </section>
+                    <section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay="0.25">
+                        <li class="links"><a class="fa fa-github" href="https://github.com/ct1799" target="_blank"></a></li>
+                        <li class="links"><a class="fa fa-linkedin" href="https://www.linkedin.com/in/christopher-tong-086474117/" target="_blank"></a></li>
+                        <li class="links"><a class="fa fa-envelope" href="mailto:ct1799@nyu.edu"></a></li>
+                        <li class="links"><a class="fa fa-file-text" href="#" target="_blank"></a></li>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <script type="text/javascript">
+            var currentDate = new Date();
+            var currentHour = currentDate.getHours();
+            if(7 <= currentHour && currentHour <= 20) {
+                document.getElementById("land").style.backgroundImage = "url(Day.png)";
+            }
+            else {
+                document.getElementById("land").style.backgroundImage = "url(Night.png)";
+            }
+        </script>
+    </body>
+</html>
