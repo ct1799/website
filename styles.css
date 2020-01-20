@@ -40,7 +40,7 @@ html, body {
     line-height: 70%;
 }
 
-.content p {
+.content p, i {
     font-family: 'Muli', sans-serif;
     font-weight 10;
     color: floralwhite;
